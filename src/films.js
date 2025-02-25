@@ -1,8 +1,13 @@
+function showResult (valor){
+  const resultDiv = document.getElementById('directors')
+  resultDiv.innerHTML = valor;
+}
+
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
-  let result =  ???;
-  console.log("EXERCICE 1 ->", result);
-  return result;
+
+  const nomsDirectors = array.map((value) => value.director);
+  showResult(nomsDirectors)
 }
 
 // Exercise 2: Get the films of a certain director
@@ -56,3 +61,5 @@ if (typeof module !== 'undefined') {
     bestFilmOfYear,
   };
 }
+
+
