@@ -2,6 +2,8 @@
 function getAllDirectors(array) {
 
   return array.map((value) => value.director);
+
+
 }
 
 // Exercise 2: Get the films of a certain director
