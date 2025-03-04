@@ -32,6 +32,7 @@ function moviesAverageByCategory(array, category) {
 
 // Exercise 7: Modify the duration of movies to minutes
 function hoursToMinutes(array) {
+  
 
 }
 
