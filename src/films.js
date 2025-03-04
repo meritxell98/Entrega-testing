@@ -41,7 +41,18 @@ function orderAlphabetically(array) {
 
 // Exercise 5: Order by year, ascending
 function orderByYear(array) {
+  const sortedbyYear = array.toSorted((first, second) => {
 
+    if(first.year > second.year){
+      return 1
+    } else if(first.year < second.year){
+      return -1
+    } else {
+      return first.title.localeCompare(second.title);
+    }
+  })
+
+  return sortedbyYear;
 
 }
 
