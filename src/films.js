@@ -62,7 +62,7 @@ function moviesAverageByCategory(array, category) {
 
   let catergoryAverage = moviesByCategory.reduce((total, movie) => total + movie.score,0);
 
-  let average = catergoryAverage/ moviesAverageByCategory.length
+  let average = catergoryAverage/ moviesByCategory.length
 
   return Number(average.toFixed(2))
 }
